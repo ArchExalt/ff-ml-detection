@@ -13,15 +13,16 @@ Used tools and data:
 - [CTU-13-Malware-Botnet-54](https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-54/)
 - [CTU-13-Malware-Botnet-46](https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-46/)
 
-Algorithm:
+Algorithm:  
+
 0. Preparation
-1) Save dns.log for both botnets as dns_botnet46.log and dns_botnet54.log
-2) Download ip2asn-v4.tsv.gz and convert ip2asn-v4.tsv to asn.csv
+- save dns.log for both botnets as dns_botnet46.log and dns_botnet54.log
+- download ip2asn-v4.tsv.gz and convert ip2asn-v4.tsv to asn.csv
 
 1. ff_preparation-aggregation.ipynb
-1) Upload asn.csv
-2) + dns_botnet46.log -> ff_agg_botnet46.csv
-3) + dns_botnet54.log -> ff_agg_botnet54.csv
-  
+- import asn.csv
+- then import dns_botnet46.log -> ff_agg_botnet46.csv
+- then import dns_botnet54.log -> ff_agg_botnet54.csv
+
 2. ff_lr_if_hybrid.ipynb
-Upload ff_agg_botnet46.csv, ff_agg_botnet54.csv
+- import ff_agg_botnet46.csv, ff_agg_botnet54.csv
